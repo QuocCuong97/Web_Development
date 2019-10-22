@@ -121,5 +121,28 @@
     </table>
     ```
     => Hiển thị trên trình duyệt :
-    
+
     <img src=https://i.imgur.com/eRjZrJr.png>
+
+## **7) Thêm caption cho bảng**
+- Để thêm caption (chú thích) cho bảng chúng ta sử dụng thẻ `<caption>` :
+    ```html
+    <table style="width: 30%">
+        <caption>Thông tin khách hàng</caption>
+        <tr>
+            <th>Họ Tên</th>
+            <th colspan="2">Số ĐT</th>
+        </tr>
+        <tr>
+            <td>Ngô Quốc Cường</td>
+            <td>0944693xxx</td>
+            <td>0986048xxx</td>
+        </tr>
+    </table>
+    ```
+    => Hiển thị trên trình duyệt :
+
+    <img src=https://i.imgur.com/kSuazqs.png>
+
+## **8) A Special Style for One Table**
+https://www.w3schools.com/html/html_tables.asp
