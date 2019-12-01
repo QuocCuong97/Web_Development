@@ -220,6 +220,7 @@
         <img src=https://i.imgur.com/LNnedYT.png>
 
 ## **16) Thuộc tính `list` (HTML5)**
+> Không được **Safari** hỗ trợ .
 - Thuộc tính `list` liên quan tới phần tử `<datalist>` chứa các option đã được định nghĩa trước cho phần tử `<input>`
 - **VD :**
     ```html
