@@ -25,7 +25,38 @@
         <img src=https://i.imgur.com/1JTKZl9.png>
 
 ### **Giá trị `auto`**
+- Có thể để giá trị của thuộc tính `margin` là `auto` để căn giữa theo chiều ngang cho phần tử .
+- Phần tử sẽ chiếm chiều rộng được chỉ định , phần không gian còn lại sẽ được chia đôi 1 cho lề trái và 1 cho lề phải .
+- **VD :**
+    ```css
+    div {
+      width: 300px;
+      margin: auto;
+      border: 1px solid red;
+    }
+    ```
+    - Hiển thị trên trình duyệt :
+
+        <img src=https://i.imgur.com/WdBKwRQ.png>
 ### **Giá trị `inherit`**
+- Phần tử có thuộc tính `margin: inherit` sẽ thừa kế thuộc tính `margin` của phần tử cha .
+- **VD :**
+    ```html
+    <style>
+    div {
+      border: 1px solid red;
+      margin-left: 100px;
+    }
+
+    p {
+      margin-left: inherit;
+    }
+    </style>
+    <div>
+      <p>Ví dụ về Inherit</p>
+    </div>
+    ```
+    - Trong ví dụ này , phần tử `<p>` sẽ kế thừa thuộc tính `margin-left: 100px` của phần tử `<div>`
 ## **2) CSS `margin` - Rút ngắn code**
 - Để rút ngắn code, có thể khai báo tất cả 4 margin trong 1 dòng thuộc tính .
 - Thuộc tính `margin` là thuộc tính rút gọn của 4 thuộc tính `margin-top`, `margin-right` , `margin-bottom`, `margin-left` .
@@ -46,3 +77,24 @@
         <img src=https://i.imgur.com/RAuKyFp.png>
 
 ## **3) Margin Collapse**
+- `Top-margin` và `bottom-margin` của các phần tử đôi khi có sự xung đột và trở thành 1 margin có giá trị lớn nhất trong 2 margin .
+- Trường hợp này chỉ xảy ra ở `top` và `bottom` , không xảy ra ở `left` và `right` .
+- **VD :**
+    ```html
+    <style>
+    h1 {
+      margin: 0 0 50px 0;
+    }
+
+    h2 {
+      margin: 20px 0 0 0;
+    }
+    </style>
+    <h1>Heading 1</h1>
+    <h2>Heading 2</h2>
+    ```
+    - Hiển thị trên trình duyệt :
+
+        <img src=https://i.imgur.com/0l1BTtg.png>
+        
+    - Trong ví dụ này, thẻ `<h1>` có `margin-bottom` là `50px`, thẻ `<h2>` có `margin-top` là `20px` . Lẽ ra khoảng cách giữa chúng phải là `70px` nhưng vì hiện tượng **margin collapse** nên khoảng cách giữa chúng chỉ là `50px` .
