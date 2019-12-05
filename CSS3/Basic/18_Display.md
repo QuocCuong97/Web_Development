@@ -76,3 +76,53 @@
     - Hiển thị trên trình duyệt :   
 
         <img src=https://i.imgur.com/hhlQ8W3.png>
+
+## **4) Giá trị `display: inline-block`**
+- So với "`display-inline`", sự khác biệt chính của giá trị `inline-block` là cho phép sẻ chiều rộng và chiều cao cho phần tử .
+- Với giá trị `inline-block`, top/bottom margin/padding được chú trọng, còn `inline` thì không .
+- So với "`display: block`", sự khác biệt chính của giá trị `inline-block` là không xuống dòng sau phần tử, vì vậy phần tử này có thể đặt kế bên phần tử khác .
+- **VD :**
+    - `inline` :
+      ```css
+      span.a {
+        display: inline; /* the default for span */
+        width: 100px;
+        height: 100px;
+        padding: 5px;
+        border: 1px solid blue;  
+        background-color: yellow; 
+      }
+      ```
+      - Hiển thị trên trình duyệt :
+
+        <img src=https://i.imgur.com/p71dB6p.png>
+
+    - `block` :
+        ```css
+        span.c {
+          display: block;
+          width: 100px;
+          height: 100px;
+          padding: 5px;
+          border: 1px solid blue;    
+          background-color: yellow; 
+        }
+        ```
+        - Hiển thị trên trình duyệt :
+
+          <img src=https://i.imgur.com/33eCn5T.png>
+
+    - `inline-block` :
+      ```css
+      span.b {
+        display: inline-block;
+        width: 100px;
+        height: 100px;
+        padding: 5px;
+        border: 1px solid blue;    
+        background-color: yellow; 
+      }
+      ```
+    - Hiển thị trên trình duyệt :
+
+      <img src=https://i.imgur.com/hEz1JFu.png>
