@@ -21,11 +21,32 @@
 - **Web Safe Font Combinations** :
     - **Serif** :
 
-        | font-family | Ví dụ |
+      <table style="width:100%">
+      <tr>
+        <th>font-family</th>
+        <th>Ví dụ</th>
+      </tr>
+      <tr>
+        <td>Georgia, serif</td>
+        <td><h2 style="font-family:Georgia, Times, serif;">This is a heading</h2></td>
+      </tr>
+      <tr>
+        <td>'Palatino Linotype', 'Book Antiqua', Palatino, serif</td>
+        <td><h2 style="font-family:'Palatino Linotype', 'Book Antiqua', Palatino, serif;">This is a heading</h2></td>
+      </tr>
+      <tr>
+        <td>'Times New Roman', Times, serif</td>
+        <td><h2 style="font-family:'Times New Roman', Times, serif;">This is a heading</h2></td>
+    </table>
+
+
+
+
+        <!-- | font-family | Ví dụ |
         |-------------|-------|
         | `Georgia, serif` | <h2 style="font-family:Georgia, Times, serif;">This is a heading</h2> |
         | `'Palatino Linotype', 'Book Antiqua', Palatino, serif` | <h2 style="font-family:'Palatino Linotype', 'Book Antiqua', Palatino, serif;">This is a heading</h2> |
-        | `'Times New Roman', Times, serif` | <h2 style="font-family:'Times New Roman', Times, serif;">This is a heading</h2> |
+        | `'Times New Roman', Times, serif` | <h2 style="font-family:'Times New Roman', Times, serif;">This is a heading</h2> | -->
 
     - **Sans-serif** :
         
