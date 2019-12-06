@@ -135,3 +135,39 @@
 
         <img src=https://i.imgur.com/q1mox2p.png>
 
+- Thuộc tính `border-radius` có thể có 4 giá trị ( cho `top-left corner`, `top-right corner`, `bottom-right corner`, `bottom-left corner` )
+
+    <img src=https://i.imgur.com/5ufPbNZ.png>
+
+- Nếu được khai báo 4 giá trị :
+    ```css
+    p {
+      border-radius: 15px 50px 30px 5px;
+    }
+    ```
+    <img src=https://i.imgur.com/SjEgrsO.png>
+
+- Nếu được khai báo 3 giá trị :
+    ```css
+    p {
+      border-radius: 15px 50px 30px;
+    }
+    ```
+    <img src=https://i.imgur.com/yhIgFWN.png>
+
+- Nếu được khai báo 2 giá trị :
+    ```css
+    p {
+      border-radius: 15px 50px;
+    }
+    ```
+    <img src=https://i.imgur.com/j1imGaU.png>
+
+- Nếu được khai báo chỉ 1 giá trị :
+    ```css
+    p {
+      border-radius: 15px;
+    }
+    ```
+    <img src=https://i.imgur.com/O6SnylC.png>
+
