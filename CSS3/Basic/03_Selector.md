@@ -385,6 +385,8 @@
       font-variant: small-caps;
     }
     ```
+## **5) Attribute selectors**
+- Sử dụng để chọn phần tử dựa trên thuộc tính và giá trị của thuộc tính .
 
 
 
