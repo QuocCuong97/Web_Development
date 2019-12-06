@@ -438,3 +438,73 @@
 
         <img src=https://i.imgur.com/fh8iqOQ.png>
 
+### **5.4) `[attribute|="value"]`**
+- Công thức này được sử dụng để chọn phần tử có giá trị bắt đầu bằng từ cho trước .
+- **VD :** Chỉ chọn phần tử có thuộc tính `class` có giá trị bắt đầu bằng từ "`top`" :
+    ```html
+    <style>
+    [class|=top] {
+      background: yellow;
+    }
+    </style>
+    <h1 class="top-header">Welcome</h1>
+    <p class="top-text">Hello world!</p>
+    <p class="topcontent">Are you learning CSS?</p>
+    ```
+    - Hiển thị trên trình duyệt :
+        
+        <img src=https://i.imgur.com/KVjfuzg.png>
+
+### **5.5) `[attribute^="value"]`**
+- Công thức này được sử dụng để chọn phần tử có giá trị bắt đầu bằng các ký tự cho trước .
+- **VD :** Chỉ chọn phần tử có thuộc tính `class` có giá trị bắt đầu bằng 3 chữ "`top`" :
+    ```html
+    <style>
+    [class^=top] {
+      background: yellow;
+    }
+    </style>
+    <h1 class="top-header">Welcome</h1>
+    <p class="top-text">Hello world!</p>
+    <p class="topcontent">Are you learning CSS?</p>
+    ```
+    - Hiển thị trên trình duyệt :
+        
+        <img src=https://i.imgur.com/ySl3CRo.png>
+
+### **5.6) `[attribute$="value"]`**
+- Công thức này được sử dụng để chọn phần tử có giá trị kết thúc bằng các ký tự cho trước .
+- **VD :** Chỉ chọn phần tử có thuộc tính `class` có giá trị bắt đầu bằng 3 chữ "`test`" :
+    ```html
+    <style> 
+    [class$="test"] {
+      background: yellow;
+    }
+    </style>
+    <div class="first_test">The first div element.</div>
+    <div class="second">The second div element.</div>
+    <div class="my-test">The third div element.</div>
+    <p class="mytest">This is some text in a paragraph.</p>
+    ```
+    - Hiển thị trên trình duyệt :
+
+        <img src=https://i.imgur.com/xyYpeqw.png>
+
+### **5.7) `[attribute*="value"]`**
+- Công thức này được sử dụng để chọn phần tử có giá trị có chứa các ký tự cho trước .
+- **VD :** Chỉ chọn phần tử có thuộc tính `class` có giá trị chứa 2 chữ "`te`" :
+    ```html
+    <style> 
+    [class*="te"] {
+      background: yellow;
+    }
+    </style>
+    <div class="first_test">The first div element.</div>
+    <div class="second">The second div element.</div>
+    <div class="my-test">The third div element.</div>
+    <p class="mytest">This is some text in a paragraph.</p>
+    ```
+    - Hiển thị trên trình duyệt :
+
+        <img src=https://i.imgur.com/xyYpeqw.png>
+
