@@ -387,6 +387,54 @@
     ```
 ## **5) Attribute selectors**
 - Sử dụng để chọn phần tử dựa trên thuộc tính và giá trị của thuộc tính .
+### **5.1) `[attribute]`**
+- Công thức này được sử dụng để chọn phần tử với thuộc tính cho trước .
+- **VD :** Chỉ chọn những phần tử `<a>` có thuộc tính `target` :
+    ```html
+    <style>
+    a[target] {
+      background-color: yellow;
+    }
+    </style>
+    <a href="https://www.w3schools.com">w3schools.com</a>
+    <a href="http://www.disney.com" target="_blank">disney.com</a>
+    <a href="http://www.wikipedia.org" target="_top">wikipedia.org</a>
+    ```
+    - Hiển thị trên trình duyệt :
 
+        <img src=https://i.imgur.com/5tbyLOZ.png>
 
+### **5.2) `[attribute="value"]`**
+- Công thức này được sử dụng để chọn phần tử với thuộc tính có giá trị cho trước .
+- **VD :** Chỉ chọn những phần tử `<a>` có thuộc tính `target="_blank"` :
+    ```html
+    <style>
+    a[target=_blank] {
+      background-color: yellow;
+    }
+    </style>
+    <a href="https://www.w3schools.com">w3schools.com</a>
+    <a href="http://www.disney.com" target="_blank">disney.com</a>
+    <a href="http://www.wikipedia.org" target="_top">wikipedia.org</a>
+    ```
+    - Hiển thị trên trình duyệt :
+
+        <img src=https://i.imgur.com/2DJ8KyZ.png>
+
+### **5.3) `[attribute~="value"]`**
+- Công thức này được sử dụng để chọn phần tử với thuộc tính có giá trị chứa từ cho trước .
+- **VD :** Chỉ chọn phần tử có thuộc tính có giá trị chứa từ "`flower`" :
+    ```html
+    <style>
+    [title~=flower] {
+      border: 5px solid yellow;
+    }
+    </style>
+    <img src="klematis.jpg" title="klematis flower" width="150" height="113">
+    <img src="img_flwr.gif" title="flower" width="224" height="162">
+    <img src="img_tree.gif" title="tree" width="200" height="358">
+    ```
+    - Hiển thị trên trình duyệt :
+
+        <img src=https://i.imgur.com/fh8iqOQ.png>
 
