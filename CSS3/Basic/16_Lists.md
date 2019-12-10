@@ -69,7 +69,16 @@
 ## **3) CSS `list-style-position`**
 - Thuộc tính `list-style-position` khai báo vị trí của phần đánh dấu list .
 - Thuộc tính `list-style-position` có 2 giá trị :
-    - `outside` : có nghĩa dấu tròn sẽ ở bên ngoài ( ở xa hơn so với các mục trong list )
-    - `inside` : có nghĩa ?????
+    - `outside` : có nghĩa dấu tròn sẽ ở bên ngoài dòng chữ, chữ đầu dòng không bị thụt vào
+    - `inside` : có nghĩa dấu tròn sẽ ở trên dòng chữ , chữ đầu tiên phải thụt vào để dư chỗ cho dấu tròn .
+- **VD :**
+    ```html
+    <style>
+    ul.a {
+      list-style-position: outside;
+    }
 
-"list-style-position: outside;" means that the bullet points will be outside the list item. The start of each line of a list item will be aligned vertically. This is default:
+    ul.b {
+      list-style-position: inside;
+    }
+    </style>
