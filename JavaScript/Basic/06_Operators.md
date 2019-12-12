@@ -71,3 +71,80 @@
         var x = 100 + 50 * 3;
         ```
         - Kết quả : `x = 250`
+
+## **2) Các biểu thức gán**
+
+| Toán tử | Ví dụ | Tương đương với |
+|---------|-------|-----------------|
+| `=` | x = y | x = y |
+| `+=` | x += y | x = x + y |
+| `-=` | x -= y | x = x - y |
+| `*=` | x *= y | x = x * y |
+| `/=` | x /= y | x = x / y |
+| `%=` | x %= y | x = x % y |
+| `**=` | x **= y | x = x ** y |
+
+- **VD :**
+    - Toán tử `=` :
+        ```js
+        var x = 10;
+        ```
+    - Toán tử `+=` :
+        ```js
+        var x = 10;
+        x += 5;
+        ```
+        - Kết quả : `x = 15`
+    - Toán tử `-=` :
+        ```js
+        var x = 10;
+        x -= 5;
+        ```
+        - Kết quả : `x = 5`
+    - Toán tử `*=` :
+        ```js
+        var x = 10;
+        x *= 5;
+        ```
+        - Kết quả : `x = 50`
+    - Toán tử `/=` :
+        ```js
+        var x = 10;
+        x /= 5;
+        ```
+        - Kết quả : `x = 2`
+    - Toán tử `%=` :
+        ```js
+        var x = 10;
+        x %= 5;
+        ```
+        - Kết quả : `x = 0`
+
+## **3) Các toán tử so sánh**
+
+| Toán tử | Mô tả |
+|---------|-------|
+| `==` | bằng |
+| `===` | bằng về cả giá trị và loại (type) |
+| `!=` | không bằng |
+| `!==` | khác giá trị hoặc khác loại (type) |
+| `>` | lớn hơn |
+| `<` | nhỏ hơn |
+| `>=` | lớn hơn hoặc bằng |
+| `<=` | nhỏ hơn hoặc bằng |
+| `?` | toán tử điều kiện |
+
+## **4) Các toán tử logic**
+
+| Toán tử | Mô tả |
+|---------|-------|
+| `&&` | and |
+| `||` | or |
+| `!` | not |
+
+## **5) Các toán tử phân loại**
+
+| Toán tử | Mô tả |
+|---------|-------|
+| `typeof` | Trả về loại (type) của biến |
+| `instanceof` | Returns true if an object is an instance of an object type |
