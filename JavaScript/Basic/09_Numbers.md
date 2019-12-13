@@ -168,3 +168,42 @@
     x.toPrecision(6);       // returns 9.65600
     typeof(z);              // returns string
     ```
+### **8.5) Phương thức `Number()`**
+- Phương thức `Number()` dùng để phân tích một giá trị để trả về một số tương ứng với giá trị đó .
+- Nếu giá trị là một đối tượng ngày tháng thì phương thức `Number()` sẽ trả về tổng số mili giây từ `1/1/1970` đến thời điểm của đối tượng ngày tháng đó .
+- Nếu không thể chuyển đổi về dạng số, phương thức sẽ trả về giá trị `NaN` .
+- **VD :**
+    ```js
+    Number(true);          // returns 1
+    Number(false);         // returns 0
+    Number("10");          // returns 10
+    Number("  10");        // returns 10
+    Number("10  ");        // returns 10
+    Number(" 10  ");       // returns 10
+    Number("10.33");       // returns 10.33
+    Number("10,33");       // returns NaN
+    Number("10 33");       // returns NaN
+    Number("John");        // returns NaN
+    ```
+### **8.6) Phương thức `parseInt()`**
+- Phương thức `parseInt()` dùng để phân tích một chuỗi để trả về một số nguyên tương ứng .
+- Nếu không thể chuyển đổi về dạng số nguyên, phương thức sẽ trả về giá trị `NaN` .
+- **VD :**
+    ```js
+    parseInt("10");         // returns 10
+    parseInt("10.33");      // returns 10
+    parseInt("10 20 30");   // returns 10
+    parseInt("10 years");   // returns 10
+    parseInt("years 10");   // returns NaN 
+    ```
+### **8.7) Phương thức `parseFloat()`**
+- Phương thức `parseFloat()` dùng để phân tích một chuỗi để trả về một số thực tương ứng .
+- Nếu không thể chuyển đổi về dạng số thực, phương thức sẽ trả về giá trị `NaN` .
+- **VD :**
+    ```js
+    parseFloat("10");        // returns 10
+    parseFloat("10.33");     // returns 10.33
+    parseFloat("10 20 30");  // returns 10
+    parseFloat("10 years");  // returns 10
+    parseFloat("years 10");  // returns NaN
+    ```
