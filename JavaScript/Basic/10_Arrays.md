@@ -195,4 +195,88 @@
     ```
     Lemon,Banana,Orange,Apple,Mango
     ```
-### **4.8) Phương thức 
+### **4.8) Phương thức `splice()`**
+### **4.9) Phương thức `slice()`**
+- Phương thức `slice()` dùng để cắt một phần của mảng ban đầu và tạo thành một mảng mới .
+- Phương thức này tạo ra một mảng riêng biệt khác hẳn mảng ban đầu, không làm ảnh hưởng đến mảng ban đầu .
+- Nếu chỉ truyền vào 1 tham số, phương thức `slice()` sẽ cắt từ điểm bắt đầu đến hết mảng :
+    ```js
+    var fruits = ["Banana", "Orange", "Lemon", "Apple", "Mango"];
+    var citrus = fruits.slice(1);
+    ```
+    => Kết quả : `citrus = Orange,Lemon,Apple,Mango`
+- Phương thức `slice()` có thể nhận vào 2 tham số là điểm start và điểm end (điểm end sẽ không được tính vào mảng mới) của phần mảng cần cắt :
+    ```js
+    var fruits = ["Banana", "Orange", "Lemon", "Apple", "Mango"];
+    var citrus = fruits.slice(1, 3);
+    ```
+    => Kết quả : `citrus = Orange,Lemon`
+## **5) Sắp xếp mảng trong JavaScript**
+### **5.1) Hàm `sort()`**
+- Hàm `sort()` sẽ sắp xếp mảng theo thứ tự bảng chữ cái .
+- **VD :**
+    ```js
+    var fruits = ["Banana", "Orange", "Apple", "Mango"];
+    fruits.sort();        // Sorts the elements of fruits
+    ```
+    => Kết quả : `fruits = Apple,Banana,Mango,Orange`
+### **5.2) Hàm `reverse()`**
+- Hàm `reverse()` sẽ đảo ngược thứ tự của mảng .
+- **VD :**
+    ```js
+    var fruits = ["Banana", "Orange", "Apple", "Mango"];
+    fruits.reverse();
+    ```
+    => Kết quả : `fruits = Mango,Apple,Orange,Banana`
+### **5.3) Sắp xếp mảng chứa số**
+- Mặc định , hàm `sort()` sắp xếp giá các giá trị của mảng là **string** .
+- Tuy nhiên, khi so sánh 2 giá trị **number** mà dưới dạng **string**, số `25` sẽ lớn hơn số `100` ( vì `2 > 1` ) => Sắp xếp bị sai .
+- Có thể fix điều này bằng cách sử dụng **hàm so sánh** ( **compare function** ) .
+- **VD1 :** Sắp xếp theo chiều tăng dần :
+    ```js
+    var points = [40, 100, 1, 5, 25, 10];
+    points.sort(function(a, b){return a - b});
+    ```
+    => Kết quả : `points = 1,5,10,25,40,100`
+- **VD2 :** Sắp xếp theo chiều giảm dần :
+    ```js
+    var points = [40, 100, 1, 5, 25, 10];
+    points.sort(function(a, b){return b - a});
+    ```
+    => Kết quả : `points = 100,40,25,10,5,1`
+- **VD3 :** Sắp xếp theo thứ tự random :
+    ```js
+    var points = [40, 100, 1, 5, 25, 10];
+    points.sort(function(a, b){return 0.5 - Math.random()});
+    ```
+    => Kết quả : `points = 40,1,10,100,5,25`
+- Từ cách sắp xếp trên , có thể suy ra cách tìm giá trị nhỏ nhất và lớn nhất trong mảng . Sắp xếp theo thứ tự tăng dần
+    ```js
+    var points = [40, 100, 1, 5, 25, 10];
+    points.sort(function(a, b){return a - b});
+    ```
+    - Giá trị nhỏ nhất là `points[0] = 1`
+    - Giá trị lớn nhất là `points[points.length - 1] = 100`
+#### **5.3.1) Sử dụng hàm `Math.max()` để tìm giá trị lớn nhất trong mảng**
+- Có thể sử dụng công thức `Math.max.apply` để tìm ra phần tử có giá trị lớn nhất trong mảng .
+- **VD :**
+    ```js
+    function myArrayMax(arr) {
+      return Math.max.apply(null, arr);
+    }
+    var points = [40, 100, 1, 5, 25, 10];
+    max = myArrayMax(points);
+    ```
+    => Kết quả : `max = 100`
+#### **5.3.2) Sử dụng hàm `Math.min()` để tìm giá trị nhỏ nhất trong mảng**
+- Có thể sử dụng công thức `Math.min.apply` để tìm ra phần tử có giá trị lớn nhất trong mảng .
+- **VD :**
+    ```js
+    function myArrayMin(arr) {
+      return Math.min.apply(null, arr);
+    }
+    var points = [40, 100, 1, 5, 25, 10];
+    max = myArrayMin(points);
+    ```
+    => Kết quả : `min = 1`
+
