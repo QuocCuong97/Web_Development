@@ -58,3 +58,34 @@
     - Hiển thị trên trình duyệt :
 
         <img src=https://i.imgur.com/4b8J6os.png>
+
+## **4) Block Level Button**
+- Thêm class "`.btn-block`" để tạo block button với chiều rộng trải dài bằng phần tử chứa nó .
+- **VD :**
+    ```html
+    <button type="button" class="btn btn-primary btn-block">Full-Width Button</button>
+    ```
+    - Hiển thị trên trình duyệt :
+
+        <img src=https://i.imgur.com/aoyBH4r.png>
+
+## **5) Active/Disabled Buttons**
+- Một button có thể được đặt là ***active*** ( có thể click được ) hoặc ở trạng thái ***disabled*** ( không thể click được ) .
+- Sử dụng class "`.active`" để cho button có thể click được ( trạng thái ***active*** ) .
+- Sử dụng thuộc tính `disabled` để button không thể click được ( trạng thái ***disabled*** )
+> Thẻ `<a>` không hỗ trợ thuộc tính `disabled` vì vậy cần phải sử dụng class "`.disabled`"
+- **VD :**
+    ```html
+    <button type="button" class="btn btn-primary">Primary Button</button>
+    <button type="button" class="btn btn-primary active">Active Primary</button>
+    <button type="button" class="btn btn-primary" disabled>Disabled Primary</button>
+    <a href="#" class="btn btn-primary disabled">Disabled Link</a>
+    ```
+    - Hiển thị trên trình duyệt :
+
+        <img src=https://i.imgur.com/oaTdMVF.png>
+
+## **6) Button Groups**
+
+
+
