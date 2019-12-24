@@ -1,5 +1,5 @@
 # Carousel
-## **1) Cơ bản về carousel**
+## **1) Cơ bản về Carousel**
 - **Carousel** là một slideshow trình chiếu vòng tròn các phần tử :
 - Các class sử dụng để tạo 1 **carousel** :
     - "`.carousel`"  : tạo ra 1 **carousel**

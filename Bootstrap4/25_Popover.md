@@ -1,5 +1,5 @@
 # Popover
-## **1) Cơ bản về popover**
+## **1) Cơ bản về Popover**
 - **Popover** về cơ bản giống với **tooltip** , là một hộp thoại pop-up xuất hiện khi user click vào phần tử .
 - Điểm khác biệt là **popover** có thể chứa nhiều nội dung hơn **tooltip** .
 - Để tạo ra một **popover** , thêm thuộc tính `data-toggle="popover"` vào phần tử .
@@ -12,7 +12,7 @@
 
         <img src=https://i.imgur.com/H7nYO0V.png>
 
-## **2) Vị trí của popover**
+## **2) Vị trí của Popover**
 - Mặc định, **popover** sẽ xuất hiện ở phía trên của phần tử .
 - Sử dụng thuộc tính `data-placement` để set position cho **popover** sẽ xuất hiện ở trên, dưới , trái, phải của phần tử :
     ```html
@@ -24,7 +24,7 @@
     - Hiển thị trên trình duyệt :
 
         <img src=https://i.imgur.com/EJacROR.png>
-## **3) Đóng popover**
+## **3) Đóng Popover**
 - Mặc định, **popover** sẽ được đóng khi user click vào phần tử 1 lần nữa .
 - Tuy nhiên, có thể sử dụng thuộc tính `data-trigger="focus"` để đóng **popover** bất cứ khi nào user click ra ngoài phần tử .
     ```html

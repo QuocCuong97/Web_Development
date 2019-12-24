@@ -10,7 +10,7 @@
     - Hiển thị trên trình duyệt :
 
         <img src=https://i.imgur.com/xuN20EZ.png>
-## **2) Vị trí của tooltip**
+## **2) Vị trí của Tooltip**
 - Mặc định, **tooltip** sẽ xuất hiện ở phía trên của phần tử .
 - Sử dụng thuộc tính `data-placement` để set position cho **tooltip** sẽ xuất hiện ở trên, dưới , trái, phải của phần tử :
     ```html
