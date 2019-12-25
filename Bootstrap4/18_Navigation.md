@@ -258,4 +258,236 @@
 
         <img src=https://i.imgur.com/8uqQLYB.png>
 
-  
+### **2.2) Vertical Navbar**
+- Bỏ đi các class "`.navbar-expand-xl|lg|md|sm`" để tạo một **navigation bar** theo hướng dọc :
+    ```html
+    <!-- A vertical navbar -->
+    <nav class="navbar bg-light">
+
+      <!-- Links -->
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link 1</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link 2</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link 3</a>
+        </li>
+      </ul>
+
+    </nav>
+    ```
+    - Hiển thị trên trình duyệt :
+
+        <img src=https://i.imgur.com/sttEusg.png>
+### **2.3) Căn chỉnh giữa cho Navbar**
+- Thêm class "`.justify-content-center`" để căn chỉnh giữa cho **navigation bar** .
+- **VD :**
+    ```html
+    <nav class="navbar navbar-expand-sm bg-light justify-content-center">
+      ...
+    </nav>
+    ```
+    - Hiển thị trên trình duyệt :
+        
+        <img src=https://i.imgur.com/l4zIEDD.png>
+### **2.4) Colored Navbar**
+- Sử dụng bất kì class "`.bg-color`" nào để thay đổi màu background của **navbar** ( "`.bg-primary`", "`.bg-success`", "`.bg-info`", "`.bg-warning`", "`.bg-danger`", "`.bg-dark`", "`.bg-light`" )
+> Nên sử dụng chữ màu trắng cho class "`navbar-dark`" hoặc chữ màu đen cho class "`navbar-light`"
+- **VD :**
+    ```html
+    <!-- Grey with black text -->
+    <nav class="navbar navbar-expand-sm bg-light navbar-light">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Active</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#">Disabled</a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Black with white text -->
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">...</nav>
+
+    <!-- Blue with white text -->
+    <nav class="navbar navbar-expand-sm bg-primary navbar-dark">...</nav>
+    ```
+    - Hiển thị trên trình duyệt :
+
+        <img src=https://i.imgur.com/WJEwhdW.png>
+
+### **2.5) Brand / Logo**
+- Class "`.navbar-brand`" được sử dụng để highlight logo - thương hiệu của trang web .
+- **VD :**
+    ```html
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+      <a class="navbar-brand" href="#">
+        <img src="https://nhanhoa.com/templates/images/logo.png" alt="Logo" style="width:200px;">
+      </a>
+      ...
+    </nav>
+    ```
+    - Hiển thị trên trình duyệt :
+
+        <img src=https://i.imgur.com/guOQ41V.png>
+
+### **2.6) Thu gọn Navigation Bar**
+- Tình huống đặt ra, đặc biệt đối với những màn hình nhỏ , người dùng muốn ẩn đi các link điều hướng và thay thế chúng bằng 1 button mà họ có thể click vào để hiện ra khi cần thiết .
+- Để tạo một **navigation bar** có thể thu gọn , sử dụng một button với class "`.navbar-toggler`" , thuộc tính `.data-toggle="collapse"` và `data-target="#target"` . Sau đó gói gọn nội dung **navbar** ( links ,... ) trong phần tử `<div>` với class "`.collapse navbar-collapse`" , theo sau là id được match với giá trị `data-target` của button .
+- **VD :**
+    ```html
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+      <!-- Brand -->
+      <a class="navbar-brand" href="#">Navbar</a>
+
+      <!-- Toggler/collapsibe Button -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Navbar links -->
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    ```
+    - Hiển thị trên trình duyệt :
+
+        <img src=https://i.imgur.com/xnW8SlS.png>
+
+### **2.7) Navbar với Dropdown**
+- **VD :**
+    ```html
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+      <!-- Brand -->
+      <a class="navbar-brand" href="#">Logo</a>
+
+      <!-- Links -->
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link 1</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link 2</a>
+        </li>
+
+        <!-- Dropdown -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+            Dropdown link
+          </a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">Link 1</a>
+            <a class="dropdown-item" href="#">Link 2</a>
+            <a class="dropdown-item" href="#">Link 3</a>
+          </div>
+        </li>
+      </ul>
+    </nav>
+    ```
+    - Hiển thị trên trình duyệt :
+
+        <img src=https://i.imgur.com/w1xpCMm.png>
+
+### **2.8) Navbar Forms và Buttons**
+- Thêm phần tử `<form>` với class "`.form-inline`" để nhóm phần input và button cạnh nhau .
+    ```html
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+      <form class="form-inline" action="/action_page.php">
+        <input class="form-control mr-sm-2" type="text" placeholder="Search">
+        <button class="btn btn-success" type="submit">Search</button>
+      </form>
+    </nav>
+    ```
+    - Hiển thị trên trình duyệt :
+        
+        <img src=https://i.imgur.com/trs3Gmn.png>
+- Có thể sử dụng các class input khác , như "`.input-group-prepend`" hoặc "`.input-group-append`" để đính kèm 1 icon hoặc 1 đoạn text gợi ý cạnh trường input .
+    ```html
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+      <form class="form-inline" action="/action_page.php">
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <span class="input-group-text">@</span>
+          </div>
+          <input type="text" class="form-control" placeholder="Username">
+        </div>
+      </form>
+    </nav>
+    ```
+    - Hiển thị trên trình duyệt :
+
+        <img src=https://i.imgur.com/1YEd4Rk.png>
+
+### **2.9) Navbar Text**
+- Sử dụng class "`.navbar-text`" để căn chỉnh theo chiều dọc bất cứ phần tử nào bên trong **navbar** mà không phải link .
+- **VD :**
+    ```html
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+
+    <!-- Links -->
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link 1</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link 2</a>
+        </li>
+      </ul>
+
+      <!-- Navbar text-->
+      <span class="navbar-text">
+        Navbar text
+      </span>
+
+    </nav>
+    ```
+    - Hiển thị trên trình duyệt :
+
+        <img src=https://i.imgur.com/9180ZeO.png>
+### **2.10) Fixed Navigation Bar**
+- **Navigation bar** có thể được fix cứng ở trên đầu hoặc phía dưới cùng của trang web mà không phụ thuộc vào việc trang web bị cuộn lên/xuống .
+- Class "`.fixed-top`" cho phép **navigation bar** được fix cứng ở đầu trang :
+    ```html
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+      ...
+    </nav>
+    ```
+    - Hiển thị trên trình duyệt :
+
+        <img src=https://i.imgur.com/kyU5f6s.png>
+- Class "`.fixed-bottom`" cho phép **navigation bar** được fix cứng ở cuối trang :
+    ```html
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-bottom">
+      ...
+    </nav>
+    ```
+    - Hiển thị trên trình duyệt :
+
+        <img src=https://i.imgur.com/1NS82wA.png>
+- Sử dụng class "`.sticky-top` để cho phép **navbar** được giữ chân lại ở đầu trang khi cuộn qua nó :
+    ```html
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top">
+      ...
+    </nav>
+    ```
