@@ -297,5 +297,177 @@
     - Hiển thị trên trình duyệt :
 
         <img src=https://i.imgur.com/Ms4CzTW.png>
-## **3) Input Groups**
-### **3.1) 
+## **3) Inputs Groups**
+### **3.1) Input Group**
+- Class "`.input-group`" là container nâng cao cho trường input bằng cách thêm icon, text hoặc button trước hoặc sau trường input .
+- Class "`.input-group-prepend`" dùng để thêm các đoạn text vào trước trường input .
+- Class "`.input-group-append`" dùng để thêm các đoạn text vào sau trường input .
+- Class "`.input-group-text`" dùng để chứa các đoạn text này .
+- **VD :**
+    ```html
+    <form>
+      <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <span class="input-group-text">@</span>
+        </div>
+        <input type="text" class="form-control" placeholder="Username">
+      </div>
+
+      <div class="input-group mb-3">
+        <input type="text" class="form-control" placeholder="Your Email">
+        <div class="input-group-append">
+          <span class="input-group-text">@example.com</span>
+        </div>
+      </div>
+    </form>
+    ```
+    - Hiển thị trên trình duyệt :
+
+        <img src=https://i.imgur.com/XIUAVKA.png>
+### **3.2) Kích cỡ Input Group**
+- Sử dụng class "`.input-group-sm`" cho input group cỡ nhỏ và "`.input-group-lg`" cho input group cỡ lớn .
+- **VD :**
+    ```html
+    <form>
+      <div class="input-group mb-3 input-group-sm">
+        <div class="input-group-prepend">
+          <span class="input-group-text">Small</span>
+        </div>
+        <input type="text" class="form-control">
+      </div>
+    </form>
+    <form>
+      <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <span class="input-group-text">Default</span>
+        </div>
+        <input type="text" class="form-control">
+      </div>
+    </form>
+    <form>
+      <div class="input-group mb-3 input-group-lg">
+        <div class="input-group-prepend">
+          <span class="input-group-text">Large</span>
+        </div>
+        <input type="text" class="form-control">
+      </div>
+    </form>
+    ```
+    - Hiển thị trên trình duyệt :
+
+        <img src=https://i.imgur.com/HbjkPVR.png>
+### **3.3) Multiple Inputs and Helpers**
+- **VD :**
+    ```html
+    <!-- Multiple inputs -->
+    <form>
+      <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <span class="input-group-text">Person</span>
+        </div>
+        <input type="text" class="form-control" placeholder="First Name">
+        <input type="text" class="form-control" placeholder="Last Name">
+      </div>
+    </form>
+
+    <!-- Multiple addons / help text -->
+    <form>
+      <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <span class="input-group-text">One</span>
+          <span class="input-group-text">Two</span>
+          <span class="input-group-text">Three</span>
+        </div>
+        <input type="text" class="form-control">
+      </div>
+    </form>
+    ```
+    - Hiển thị trên trình duyệt :
+
+        <img src=https://i.imgur.com/99vzjhh.png>
+### **3.4) Input Group với Checkbox và Radio**
+- **VD :**
+    ```html
+    <div class="input-group mb-3">
+      <div class="input-group-prepend">
+        <div class="input-group-text">
+        <input type="checkbox">
+        </div>
+      </div>
+      <input type="text" class="form-control" placeholder="Some text">
+    </div>
+
+    <div class="input-group mb-3">
+      <div class="input-group-prepend">
+        <div class="input-group-text">
+          <input type="radio">
+        </div>
+      </div>
+      <input type="text" class="form-control" placeholder="Some text">
+    </div>
+    ```
+    - Hiển thị trên trình duyệt :
+
+        <img src=https://i.imgur.com/7KQWrr0.png>
+### **3.5) Input Group Buttons**
+- **VD :**
+    ```html
+    <div class="input-group mb-3">
+      <div class="input-group-prepend">
+        <button class="btn btn-outline-primary" type="button">Basic Button</button>
+      </div>
+      <input type="text" class="form-control" placeholder="Some text">
+    </div>
+
+    <div class="input-group mb-3">
+      <input type="text" class="form-control" placeholder="Search">
+      <div class="input-group-append">
+        <button class="btn btn-success" type="submit">Go</button>
+      </div>
+    </div>
+
+    <div class="input-group mb-3">
+      <input type="text" class="form-control" placeholder="Something clever..">
+      <div class="input-group-append">
+        <button class="btn btn-primary" type="button">OK</button>
+        <button class="btn btn-danger" type="button">Cancel</button>
+      </div>
+    </div>
+    ```
+    - Hiển thị trên trình duyệt :
+
+        <img src=https://i.imgur.com/coFpEV1.png>
+### **3.6) Input Group với Dropdown Button**
+- **VD :**
+    ```html
+    <div class="input-group mt-3 mb-3">
+      <div class="input-group-prepend">
+        <button type="button" class="btn btn-outline-secondary dropdown-toggle" data-toggle="dropdown">
+        Dropdown button
+        </button>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#">Link 1</a>
+          <a class="dropdown-item" href="#">Link 2</a>
+          <a class="dropdown-item" href="#">Link 3</a>
+        </div>
+      </div>
+      <input type="text" class="form-control" placeholder="Username">
+    </div>
+    ```
+    - Hiển thị trên trình duyệt :
+
+        <img src=https://i.imgur.com/O0E6UdY.png>
+### **3.7) Input Group Labels**
+- **VD :**
+    ```html
+    <label for="demo">Write your email here:</label>
+    <div class="input-group mb-3">
+      <input type="text" class="form-control" placeholder="Email" id="demo" name="email">
+      <div class="input-group-append">
+        <span class="input-group-text">@example.com</span>
+      </div>
+    </div>
+    ```
+    - Hiển thị trên trình duyệt :
+
+        <img src=https://i.imgur.com/dS8gYQU.png>
