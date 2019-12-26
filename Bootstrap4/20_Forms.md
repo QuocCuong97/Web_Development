@@ -131,35 +131,5 @@
 - **VD2 :** Sử dụng class "`.need-validation`" :
     [Tham khảo](https://www.w3schools.com/bootstrap4/tryit.asp?filename=trybs_form_validation_needs&stacked=h)
 
-## **4) Custom Form**
-- **Bootstrap4** cho phép cá nhân hóa cách hiển thị của các phần tử form :
 
-    <img src=https://i.imgur.com/uqUYyNA.png>
-### **4.1) Custom Checkbox**
-- Để tạo 1 custom checkbox , đặt chúng trong một phần tử container như `<div>` , sử dụng class "`.custom-control` và "`.custom-checkbox`" quanh checkbox . Sau đó thêm class "`.custom-control-input` vào trường input có `type="checkbox"` .
-- **VD :**
-    ```html
-    <form>
-      <div class="custom-control custom-checkbox">
-        <input type="checkbox" class="custom-control-input" id="customCheck" name="example1">
-        <label class="custom-control-label" for="customCheck">Custom checkbox</label>
-      </div>
-    </form>
-    ```
-    - Hiển thị trên trình duyệt :
 
-        <img src=https://i.imgur.com/aDeriX0.png>
-### **4.2) Custom Switch**
-- Để tạo một custom "toggle switch", đặt chúng trong một phần tử container như `<div>` , sử dụng class "`.custom-control` và "`.custom-switch`" quanh checkbox . Sau đó thêm class "`.custom-control-input` vào trường input có `type="checkbox"` .
-- **VD :**
-    ```html
-    <form>
-      <div class="custom-control custom-switch">
-        <input type="checkbox" class="custom-control-input" id="switch1">
-        <label class="custom-control-label" for="switch1">Toggle me</label>
-      </div>
-    </form>
-    ```
-    - Hiển thị trên trình duyệt :
-
-        <img src=https://i.imgur.com/QKdzFrE.png>
