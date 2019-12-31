@@ -73,3 +73,24 @@
 - Hàm `Math.random()` trả về 1 số ngẫu nhiên trong khoảng từ `0` đến `1` :  
     ```js
     Math.random();    // returns 0.6931053313565989 (random)
+    ```
+- Có thể sử dụng kết hợp với hàm `Math.floor()` hoặc `Math.ceil()` để trả về số ngẫu nhiên trong các khoảng số mong muốn .
+- **VD :**
+    ```js
+    Math.floor(Math.random() * 10);     // returns a random integer from 0 to 9
+    Math.floor(Math.random() * 11);      // returns a random integer from 0 to 10
+    Math.floor(Math.random() * 100);     // returns a random integer from 0 to 99
+    ```
+- Có thể sử dụng hàm để trả về số ngẫu nhiên trong một khoảng được giới hạn trước từ `min - max` :
+    - **VD1 :** Số ngẫu nhiên trong khoảng `min - max` :
+        ```js
+        function getRndInteger(min, max) {
+          return Math.floor(Math.random() * (max - min) ) + min;
+        }
+        ```
+    - **VD2 :** Số ngẫu nhiên trong khoảng `min - max` - tính cả `min` và `max` :
+        ```js
+        function getRndInteger(min, max) {
+          return Math.floor(Math.random() * (max - min + 1) ) + min;
+        }
+        ```
